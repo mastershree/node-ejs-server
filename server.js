@@ -23,5 +23,7 @@ app.get('/about', function (req, res) {
     res.render('pages/about');
 });
 
+console.log("Testing merge conflict");
+
 app.listen(8080);
 console.log('8080 is the magic port');
