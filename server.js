@@ -6,7 +6,7 @@ var app = express();
 app.set('view engine', 'ejs');
 
 // use res.render to load up an ejs view file
-console.log("Testing merge");
+console.log("Testing merge conflict");
 // index page
 app.get('/', function (req, res) {
     var mascots = [
