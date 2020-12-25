@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <h1>This is great</h1>
+            <p>Welcome to templating using EJS</p>
+            <p>Variable: <%=tagline %>
+            </p>
+            <h4>Fetching list:</h4>
+            <p>
+            <ul>
+                <% mascots.forEach(function(item){ %>
+                    <li>Name: <%=item.name %>, Organization: <%=item.organization %>, Birth-Year: <%=item.birth_year %>
+                    </li>
+                    <% }); %>
+            </ul>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+
+</html>
